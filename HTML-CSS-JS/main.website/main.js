@@ -1,8 +1,8 @@
-document.getElementById("todoList");
+
 
 function addTodoList() {
-    todoList.innerHTML = `
-    <li><a href="#">+ new Todo</a></li>
-    `;
-    todoList.appendChild("Todo 1");
+    const list = document.createElement("li");
+    const textList = document.createTextNode("Todo 69");
+    list.appendChild(textList);
+    document.getElementById("todoList").appendChild(list);
 }
